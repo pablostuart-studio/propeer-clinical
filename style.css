@@ -1,0 +1,1483 @@
+.e-dashboard-table-open-sidebar,
+.e-dashboard-table-open-sidebar * {
+  box-sizing: border-box;
+}
+.e-dashboard-table-open-sidebar {
+  background: var(--colours-background-01, #f4f5f7);
+  height: 66.25rem;
+  position: relative;
+}
+.main {
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 71.25rem;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+}
+.breadcrumb-navigation {
+  background: #ffffff;
+  border-radius: var(--corner-04, 1.25rem) var(--corner-04, 1.25rem) 0rem 0rem;
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem 0.0625rem 0rem 0.0625rem;
+  padding: 1.75rem 2.5rem 1.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.page-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-sidebar {
+  border-radius: var(--corner-01, 0.5rem);
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.breadcrumb-container {
+  padding: 0.125rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.item {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.right-arrow {
+  flex-shrink: 0;
+  width: 0.1875rem;
+  height: 0.375rem;
+  position: relative;
+  overflow: visible;
+}
+.active-item {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.divider {
+  margin-top: -0.0625rem;
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0rem;
+  position: relative;
+}
+.page-heading {
+  background: var(--colours-white-01, #ffffff);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0.0625rem 0rem 0.0625rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.page-heading-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 32.875rem;
+  position: relative;
+}
+.heading {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(--h1-font-family, "FkGroteskNeueTrial-Regular", sans-serif);
+  font-size: var(--h1-font-size, 1.5rem);
+  font-weight: var(--h1-font-weight, 400);
+  position: relative;
+}
+.description {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.actions {
+  background: var(--colours-white-01, #ffffff);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0.0625rem 0rem 0.0625rem;
+  padding: 0rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.actions-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.action-card {
+  background: var(--colours-white-01, #ffffff);
+  border-radius: var(--corner-04, 1.25rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 21.083125rem;
+  position: relative;
+  box-shadow: var(
+    --shadow-buttons-box-shadow,
+    0rem 0.125rem 0.125rem 0.25rem rgba(34, 34, 34, 0.06)
+  );
+}
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.environments {
+  flex-shrink: 0;
+  width: 1.14125rem;
+  height: 1.25rem;
+  position: relative;
+  overflow: visible;
+}
+.button-small-icon {
+  background: var(--colours-white-01, #ffffff);
+  border-radius: var(--corner-01, 0.5rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.5rem 0.375rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: var(
+    --shadow-buttons-box-shadow,
+    0rem 0.125rem 0.125rem 0.25rem rgba(34, 34, 34, 0.06)
+  );
+}
+.container {
+  padding: 0.0625rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.arrow {
+  flex-shrink: 0;
+  width: 0.375rem;
+  height: 0.375rem;
+  position: relative;
+  overflow: visible;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading2 {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+}
+.description2 {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.environments2 {
+  flex-shrink: 0;
+  width: 1.14125rem;
+  height: 1.25rem;
+  position: relative;
+  overflow: visible;
+}
+.arrow2 {
+  flex-shrink: 0;
+  width: 0.375rem;
+  height: 0.375rem;
+  position: relative;
+  overflow: visible;
+}
+.toolbar {
+  background: var(--colours-white-01, #ffffff);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0.0625rem 0rem 0.0625rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading3 {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --large-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--large-body-font-size, 1rem);
+  font-weight: var(--large-body-font-weight, 400);
+  position: relative;
+}
+.toolbar-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.switch {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-panel {
+  border-radius: var(--corner-01, 0.5rem);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  position: relative;
+  overflow: visible;
+}
+.button-list {
+  border-radius: var(--corner-01, 0.5rem);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  position: relative;
+  overflow: visible;
+}
+.sort-filter {
+  background: var(--colours-white-01, #ffffff);
+  border-radius: var(--corner-01, 0.5rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem;
+  padding: 0.625rem 0.75rem 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: var(
+    --shadow-buttons-box-shadow,
+    0rem 0.125rem 0.125rem 0.25rem rgba(34, 34, 34, 0.06)
+  );
+}
+.icons-down {
+  flex-shrink: 0;
+  width: 0.375rem;
+  height: 0.1875rem;
+  position: relative;
+  overflow: visible;
+}
+.icons-down2 {
+  flex-shrink: 0;
+  width: 0.375rem;
+  height: 0.1875rem;
+  position: relative;
+  overflow: visible;
+}
+.search {
+  background: var(--colours-white-01, #ffffff);
+  border-radius: var(--corner-01, 0.5rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem;
+  padding: 0.625rem 0.75rem 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 16.25rem;
+  position: relative;
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 0.625rem;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.input-text {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.templates-table {
+  background: var(--colours-white-01, #ffffff);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0.0625rem 0rem 0.0625rem;
+  padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.table-templates {
+  border-radius: var(--corner-02, 0.75rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  box-shadow: var(
+    --shadow-buttons-box-shadow,
+    0rem 0.125rem 0.125rem 0.25rem rgba(34, 34, 34, 0.06)
+  );
+}
+.table-header-row {
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0rem 0.0625rem 0rem;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.table-item-name {
+  padding: 0.0625rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 22.5rem;
+  position: relative;
+}
+.table-header-name {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.table-item-label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 12.5rem;
+  position: relative;
+}
+.table-header-type-status {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.table-item-created {
+  padding: 0.0625rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 12.5rem;
+  position: relative;
+}
+.table-header-created {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.table-header-edited {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.drag {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.templates-table-row {
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0rem 0.0625rem 0rem;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 65.75rem;
+  height: 3.75rem;
+  position: relative;
+}
+.table-item-name2 {
+  padding: 0.125rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 22.5rem;
+  position: relative;
+}
+.item-name {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+}
+.label-small {
+  background: var(--colours-label-03-c, #f5faff);
+  border-radius: var(--corner-03, 0.875rem);
+  border-style: solid;
+  border-color: var(--colours-label-03-b, rgba(6, 59, 236, 0.5));
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.625rem 0.25rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label2 {
+  color: var(--colours-label-03-a, #063bec);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.table-item-created2 {
+  padding: 0.125rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 12.5rem;
+  position: relative;
+}
+.created-date {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.edited-date {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.button-table {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.label-small2 {
+  background: var(--colours-label-05-c, #f2fff2);
+  border-radius: var(--corner-03, 0.875rem);
+  border-style: solid;
+  border-color: var(--colours-label-05-b, rgba(0, 124, 12, 0.5));
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.625rem 0.25rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label3 {
+  color: var(--colours-label-05-a, #007c0c);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.button-table2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.label-small3 {
+  background: var(--colours-label-04-c, #fff5e9);
+  border-radius: var(--corner-03, 0.875rem);
+  border-style: solid;
+  border-color: var(--colours-label-04-b, rgba(255, 63, 16, 0.5));
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.625rem 0.25rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label4 {
+  color: var(--colours-label-04-a, #ff3f10);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.button-table3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.label-small4 {
+  background: var(--colours-label-02-c, #f7f5ff);
+  border-radius: var(--corner-03, 0.875rem);
+  border-style: solid;
+  border-color: var(--colours-label-02-b, #a78ef9);
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.625rem 0.25rem 0.625rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label5 {
+  color: var(--colours-label-02-a, #4f1df2);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.button-table4 {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.templates-table-row2 {
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 65.75rem;
+  height: 3.75rem;
+  position: relative;
+}
+.button-table5 {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.pagination {
+  background: var(--colours-white-01, #ffffff);
+  border-radius: 0rem 0rem var(--corner-04, 1.25rem) var(--corner-04, 1.25rem);
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0rem 0.0625rem 0.0625rem 0.0625rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.pagination2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.navigation-button {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 4.375rem;
+  position: relative;
+}
+.left-arrow {
+  flex-shrink: 0;
+  width: 0.25rem;
+  height: 0.5rem;
+  position: relative;
+  overflow: visible;
+}
+.previous-button-container {
+  padding: 0.0625rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3.5625rem;
+  position: relative;
+}
+.button-text {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.pagination-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.pagination-number {
+  background: var(--colours-label-02-c, #f7f5ff);
+  border-radius: var(--corner-03, 0.875rem);
+  border-style: solid;
+  border-color: var(--colours-label-02-b, #a78ef9);
+  border-width: 0.0625rem;
+  padding: 0.375rem 0.5rem 0.25rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.5625rem;
+  position: relative;
+}
+.number {
+  color: var(--colours-label-02-a, #4f1df2);
+  text-align: center;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.pagination-number2 {
+  border-radius: var(--corner-03, 0.875rem);
+  padding: 0.375rem 0.5rem 0.25rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.5625rem;
+  position: relative;
+}
+.number2 {
+  color: var(--colours-gray-01, #222222);
+  text-align: center;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.navigation-button2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 4.375rem;
+  position: relative;
+}
+.next-button-container {
+  padding: 0.0625rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.9375rem;
+  position: relative;
+}
+.button-text2 {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.right-arrow2 {
+  flex-shrink: 0;
+  width: 0.25rem;
+  height: 0.5rem;
+  position: relative;
+  overflow: visible;
+}
+.footer {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  position: relative;
+}
+.link {
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 4.875rem;
+  position: relative;
+}
+.link-text {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.divider2 {
+  margin-top: -0.0625rem;
+  border-style: solid;
+  border-color: var(--colours-gray-04, #e5e5e5);
+  border-width: 0.0625rem 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 1.4375rem;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.copyright {
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 9.3125rem;
+  position: relative;
+}
+.copyright-text {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.sidebar {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 18.75rem;
+  height: 56.25rem;
+  position: sticky;
+  left: 0rem;
+  top: 0rem;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.user-details {
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.profile {
+  background: var(--colours-background-01, #f4f5f7);
+  border-radius: 6.25rem;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  box-shadow: var(
+    --shadow-profile-box-shadow,
+    0rem 0.0625rem 0.125rem 0.125rem rgba(34, 34, 34, 0.06)
+  );
+}
+.name-email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.user-name {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.email {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-sidebar2 {
+  border-radius: var(--corner-02, 0.75rem);
+  padding: 0rem 0.625rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 13.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.container4 {
+  padding: 0.125rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.button-label {
+  color: var(--colours-gray-01, #222222);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.button-sidebar3 {
+  background: var(--colours-label-02-c, #f7f5ff);
+  border-radius: var(--corner-02, 0.75rem);
+  border-style: solid;
+  border-color: var(--colours-label-02-b, #a78ef9);
+  border-width: 0.0625rem;
+  padding: 0rem 0.625rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 13.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+.sidebar-icons2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.button-label2 {
+  color: var(--colours-accent-01, #4f1df2);
+  text-align: left;
+  font-family: var(
+    --body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--body-font-size, 0.875rem);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.sidebar-icons3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons6 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons7 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.my-account {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading4 {
+  padding: 0rem 0rem 0rem 0.8125rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.my-account-heading {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.options2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.sidebar-icons8 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons9 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons10 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.admin-heading {
+  color: var(--colours-gray-03, #ababab);
+  text-align: left;
+  font-family: var(
+    --small-body-font-family,
+    "FkGroteskNeueTrial-Regular",
+    sans-serif
+  );
+  font-size: var(--small-body-font-size, 0.75rem);
+  font-weight: var(--small-body-font-weight, 400);
+  position: relative;
+}
+.sidebar-icons11 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons12 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons13 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}
+.sidebar-icons14 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: visible;
+}

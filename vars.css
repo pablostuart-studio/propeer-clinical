@@ -1,0 +1,62 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --gradient-01: linear-gradient(
+    180deg,
+    rgba(101, 54, 255, 0.8) 0%,
+    rgba(149, 116, 255, 0.8) 100%
+  );
+
+  /* Fonts */
+  --h1-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --h1-font-size: 1.5rem;
+  --h1-line-height: normal;
+  --h1-font-weight: 400;
+  --h1-font-style: normal;
+  --h2-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --h2-font-size: 1rem;
+  --h2-line-height: normal;
+  --h2-font-weight: 400;
+  --h2-font-style: normal;
+  --h3-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --h3-font-size: 1.25rem;
+  --h3-line-height: normal;
+  --h3-font-weight: 400;
+  --h3-font-style: normal;
+  --extra-large-body-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --extra-large-body-font-size: 3.75rem;
+  --extra-large-body-line-height: normal;
+  --extra-large-body-font-weight: 400;
+  --extra-large-body-font-style: normal;
+  --large-body-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --large-body-font-size: 1rem;
+  --large-body-line-height: normal;
+  --large-body-font-weight: 400;
+  --large-body-font-style: normal;
+  --body-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --body-font-size: 0.875rem;
+  --body-line-height: normal;
+  --body-font-weight: 400;
+  --body-font-style: normal;
+  --small-body-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --small-body-font-size: 0.75rem;
+  --small-body-line-height: normal;
+  --small-body-font-weight: 400;
+  --small-body-font-style: normal;
+  --xtra-small-body-font-family: FkGroteskNeueTrial-Regular, sans-serif;
+  --xtra-small-body-font-size: 0.625rem;
+  --xtra-small-body-line-height: normal;
+  --xtra-small-body-font-weight: 400;
+  --xtra-small-body-font-style: normal;
+
+  /* Effects */
+  --shadow-images-box-shadow: 0rem 0.1875rem 0.25rem 0.125rem
+    rgba(34, 34, 34, 0.14);
+  --shadow-other-box-shadow: 0rem 0.25rem 0.25rem 0.25rem rgba(34, 34, 34, 0.06);
+  --shadow-buttons-box-shadow: 0rem 0.125rem 0.125rem 0.25rem
+    rgba(34, 34, 34, 0.06);
+  --shadow-button-dark-box-shadow: 0rem 0.125rem 0.125rem 0.25rem
+    rgba(34, 34, 34, 0.16);
+  --shadow-profile-box-shadow: 0rem 0.0625rem 0.125rem 0.125rem
+    rgba(34, 34, 34, 0.06);
+}
